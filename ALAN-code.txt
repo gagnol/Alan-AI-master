@@ -1,0 +1,36 @@
+// Use this sample to create your own voice commands
+intent('hello','hi','hello there','activate', (p) => {
+    p.play({command:'activate'})
+    p.play('hello, welcome to a i workers , my name is Alcalan ,your virtual assistant.');
+});
+
+intent('dinner','special','todays','how','how do you create' , (p)=>{
+       p.play({command:'specials'})
+   p.play('We use our Worker-App for Android and iOS to enable Workers to easily create datasets and transfer them to you from anywhere in the world')
+})
+
+
+intent('lunch', (p)=>{
+   p.play({command:'specials'})
+   p.play('Todays lunch specials are Shrimp and grits cheddar ,please read more about it')
+})
+
+intent('reserve','reservation','contact','table','what is this ','what','case studies', (p)=>{
+   p.play({command:'contact'})
+   p.play('well, AI has multiple applications such us  . Support Chatbot .Car Information and Facial Recognition. please read more about it')
+})
+
+intent('chef','restaurant','resto','coock', (p)=>{
+   p.play({command:'chef'})
+   p.play('say hello Vito Bellino')
+})
+
+intent('login','signin','register','user', (p)=>{
+   p.play({command:'login'})
+   p.play('Welcome , please complete email and password or register')
+})
+
+intent('language','español','spanish','lang', (p)=>{
+   p.play({command:'lang'})
+   p.play('Bienvenido a la Bisteca en Español')
+})
